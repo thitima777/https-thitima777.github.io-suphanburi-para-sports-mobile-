@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เข้าร่วมสนับสนุน | ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav>
+   <div class="logo">
+  <img src="assets/logo.png" alt="Suphanburi Para Sports Club Logo" class="logo-img">
+  <div class="logo-text">
+    <strong>SUPHANBURI</strong>
+    <span>PARA SPORTS CLUB</span>
+  </div>
+</div>
+      <div class="logo-text">
+        <strong>SUPHANBURI</strong>
+        <span>PARA SPORTS CLUB</span>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a href="index.html">หน้าแรก</a>
+      <a href="about.html">เกี่ยวกับชมรม</a>
+      <a href="activities.html">กิจกรรม</a>
+      <a href="achievements.html">ผลงาน</a>
+      <a href="donate.html">เข้าร่วมสนับสนุน</a>
+      <a href="contact.html">ติดต่อ</a>
+    </div>
+  </nav>
+</header>
+
+<a href="index.html" class="back-btn">← กลับหน้าแรก</a>
+
+<section class="hero" style="height:60vh;">
+  <div class="hero-content reveal">
+    <h1>
+      เข้าร่วมสนับสนุน<br>
+      <span>ทุกการให้ คือพลังของโอกาส</span>
+    </h1>
+    <p>
+      การสนับสนุนของท่านช่วยสร้างโอกาส ศักดิ์ศรี  
+      และอนาคตให้กับนักกีฬาคนพิการจังหวัดสุพรรณบุรี
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn primary" id="openQR">บริจาคผ่าน PromptPay</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title reveal">แจ้งการสนับสนุน</h2>
+
+  <form class="contact-form reveal" id="donateForm">
+    <input type="text" placeholder="ชื่อ - นามสกุล ผู้สนับสนุน" required>
+    <input type="tel" placeholder="เบอร์โทรศัพท์" required>
+    <input type="number" placeholder="จำนวนเงิน (บาท)">
+    <textarea rows="4" placeholder="ข้อความถึงชมรม (ถ้ามี)"></textarea>
+    <button type="submit" class="btn primary">ส่งข้อมูลการสนับสนุน</button>
+  </form>
+</section>
+
+<!-- THANK YOU -->
+<div class="thank-you" id="thankYou">
+  <h2>🙏 ขอบคุณจากใจ</h2>
+  <p>
+    ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี  
+    ขอขอบคุณท่านที่ร่วมสนับสนุน  
+    พลังของท่านคือกำลังใจสำคัญของนักกีฬาทุกคน
+  </p>
+  <a href="index.html" class="btn secondary">กลับหน้าแรก</a>
+</div>
+
+<!-- QR MODAL -->
+<div class="modal" id="qrModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>สแกนเพื่อบริจาค (PromptPay)</h3>
+    <img src="assets/qr-promptpay.jpg" alt="QR PromptPay">
+    <p>
+      ชื่อบัญชี: Miss Thitima Chumpengphan<br>
+      รับโอนจากทุกธนาคาร
+    </p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
