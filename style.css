@@ -1,113 +1,271 @@
+/* ===== RESET & BASE ===== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body.mobile {
   font-family: 'Kanit', sans-serif;
+  background: #0f1b24;
+  color: #ffffff;
+  line-height: 1.7;
 }
 
-body {
-  background: linear-gradient(135deg, #0f1f2b, #1c2f3f);
-  color: #fff;
-}
-
-/* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.brand img {
-  width: 42px;
-  height: auto;
-}
-
-.brand-text strong {
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.brand-text span {
-  font-size: 12px;
-  color: #ff9f1a;
-  letter-spacing: 2px;
-}
-
-.menu-btn {
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 20px;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
-
-/* MOBILE MENU */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  background: #0f1f2b;
-}
-
-.mobile-menu a {
-  padding: 14px;
-  color: #fff;
+a {
   text-decoration: none;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  color: inherit;
 }
 
-/* HERO */
-.hero {
-  padding: 60px 20px 80px;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== HEADER ===== */
+.mobile-header {
+  text-align: center;
+  padding: 20px 16px;
+  background: #0b141b;
+}
+
+.mobile-header .logo {
+  width: 90px;
+  margin: 0 auto 10px;
+}
+
+.mobile-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mobile-header span {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #ff9f1c;
+}
+
+/* ===== NAV ===== */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background: #16232f;
+}
+
+.mobile-nav a {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #223344;
+  font-size: 15px;
+}
+
+.mobile-nav a.active {
+  background: #ff9f1c;
+  color: #000;
+  font-weight: 600;
+}
+
+/* ===== CONTENT ===== */
+.mobile-content {
+  padding: 20px;
+}
+
+.mobile-content h2 {
+  font-size: 22px;
+  color: #ff9f1c;
+  margin-bottom: 10px;
+}
+
+.mobile-content h3 {
+  font-size: 18px;
+  color: #ff9f1c;
+  margin-bottom: 6px;
+}
+
+.mobile-content p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.mobile-content ul {
+  padding-left: 20px;
+}
+
+.mobile-content li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* ===== HIGHLIGHT TEXT ===== */
+.highlight {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ===== HERO (INDEX) ===== */
+.mobile-hero {
   background: linear-gradient(135deg, #f2992e, #c56d13);
+  padding: 50px 20px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 32px;
+.mobile-hero h2 {
+  font-size: 28px;
   font-weight: 800;
   line-height: 1.3;
 }
 
-.hero h1 span {
-  color: #ffb347;
+.mobile-hero h2 span {
+  color: #ffe0b2;
 }
 
-.hero p {
-  margin-top: 16px;
-  font-size: 16px;
+.mobile-hero p {
+  margin-top: 12px;
+  font-size: 15px;
 }
 
-.hero-buttons {
-  margin-top: 28px;
+/* ===== BUTTONS ===== */
+.hero-buttons,
+.buttons {
+  margin-top: 24px;
   display: flex;
-  gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 14px;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: 600;
+  text-align: center;
+  font-size: 16px;
 }
 
 .primary {
-  background: #ff7a00;
-  color: #fff;
+  background: #ffffff;
+  color: #000;
 }
 
 .outline {
-  border: 2px solid #ff7a00;
-  color: #ff7a00;
-  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ===== QUICK MENU ===== */
+.quick-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.quick-menu a {
+  background: #16232f;
+  padding: 16px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+/* ===== CARD STYLE (กิจกรรม / ผลงาน / ติดต่อ / บริจาค) ===== */
+.activity-card,
+.achievement-card,
+.contact-card,
+.donate-card {
+  background: #16232f;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.activity-card {
+  border-left: 4px solid #00c2ff;
+}
+
+.achievement-card {
+  border-left: 4px solid #ff9f1c;
+}
+
+.contact-card h3,
+.activity-card h3,
+.achievement-card h3,
+.donate-card h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.activity-card h3 {
+  color: #00c2ff;
+}
+
+.achievement-card h3,
+.donate-card h3 {
+  color: #ff9f1c;
+}
+
+/* ===== CONTACT BUTTON ===== */
+.contact-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact-btn.phone {
+  background: #00c853;
+  color: #fff;
+}
+
+.contact-btn.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+/* ===== DONATE ===== */
+.qr {
+  width: 220px;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.donate-form input,
+.donate-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Kanit', sans-serif;
+}
+
+.donate-form button {
+  width: 100%;
+  padding: 14px;
+  background: #ff9f1c;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.thanks {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.mobile-footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  background: #0b141b;
+  color: #aaa;
 }
