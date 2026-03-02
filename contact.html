@@ -1,112 +1,73 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ติดต่อเรา | ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ติดต่อ | Suphanburi Para Sports Club</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-<header>
-  <nav>
-   <div class="logo">
-  <img src="assets/logo.png" alt="Suphanburi Para Sports Club Logo" class="logo-img">
-  <div class="logo-text">
-    <strong>SUPHANBURI</strong>
-    <span>PARA SPORTS CLUB</span>
-  </div>
-</div>
-      <div class="logo-text">
-        <strong>SUPHANBURI</strong>
-        <span>PARA SPORTS CLUB</span>
-      </div>
-    </div>
+<body class="mobile">
 
-    <div class="menu">
-      <a href="index.html">หน้าแรก</a>
-      <a href="about.html">เกี่ยวกับชมรม</a>
-      <a href="activities.html">กิจกรรม</a>
-      <a href="achievements.html">ผลงาน</a>
-      <a href="donate.html">เข้าร่วมสนับสนุน</a>
-      <a href="contact.html">ติดต่อ</a>
-    </div>
+  <!-- HEADER -->
+  <header class="mobile-header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>SUPHANBURI<br><span>PARA SPORTS CLUB</span></h1>
+  </header>
+
+  <!-- NAV -->
+  <nav class="mobile-nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="achievements.html">ผลงาน</a>
+    <a href="donate.html">สนับสนุน</a>
+    <a href="contact.html" class="active">ติดต่อ</a>
   </nav>
-</header>
 
-<!-- BACK -->
-<a href="index.html" class="back-btn">← กลับหน้าแรก</a>
+  <!-- CONTENT -->
+  <main class="mobile-content">
 
-<!-- HERO -->
-<section class="hero" style="height:55vh;">
-  <div class="hero-content reveal">
-    <h1>
-      ติดต่อชมรม<br>
-      <span>เรายินดีรับฟังและร่วมสร้างโอกาส</span>
-    </h1>
-    <p>
-      หากท่านสนใจเข้าร่วมกิจกรรม สนับสนุน  
-      หรือสอบถามข้อมูลเพิ่มเติม สามารถติดต่อเราได้ทุกช่องทาง
-    </p>
-  </div>
-</section>
+    <section>
+      <h2>ติดต่อชมรม</h2>
+      <p class="highlight">
+        เรายินดีให้ข้อมูล และเปิดโอกาสให้ทุกคนมีส่วนร่วม
+      </p>
+    </section>
 
-<!-- CONTACT INFO -->
-<section>
-  <h2 class="section-title reveal">ข้อมูลการติดต่อ</h2>
+    <!-- PHONE -->
+    <div class="contact-card">
+      <h3>📞 โทรศัพท์</h3>
+      <a href="tel:0800060015" class="contact-btn phone">
+        080-006-0015
+      </a>
+    </div>
 
-  <div class="card-grid">
-    <div class="card reveal">
-      <h3>📍 ที่ตั้ง</h3>
+    <!-- LOCATION -->
+    <div class="contact-card">
+      <h3>📍 สถานที่</h3>
       <p>
         โรงเรียนบ้านโพธิ์ตะวันออก<br>
         จังหวัดสุพรรณบุรี
       </p>
     </div>
 
-    <div class="card reveal">
-      <h3>📞 โทรศัพท์</h3>
-      <p>
-        080-0060015<br>
-        (ติดต่อประสานงานชมรม)
-      </p>
-    </div>
-
-    <div class="card reveal">
+    <!-- FACEBOOK -->
+    <div class="contact-card">
       <h3>📘 Facebook</h3>
-      <p>
-        ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี<br>
-        ใช้สำหรับข่าวสารและกิจกรรม
-      </p>
+      <a href="https://www.facebook.com/" target="_blank" class="contact-btn facebook">
+        ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี
+      </a>
     </div>
-  </div>
-</section>
 
-<!-- CONTACT FORM -->
-<section>
-  <h2 class="section-title reveal">ส่งข้อความถึงเรา</h2>
+  </main>
 
-  <form class="contact-form reveal">
-    <input type="text" placeholder="ชื่อ - นามสกุล" required>
-    <input type="tel" placeholder="เบอร์โทรศัพท์" required>
-    <input type="email" placeholder="อีเมล (ถ้ามี)">
-    <textarea rows="5" placeholder="ข้อความที่ต้องการติดต่อ"></textarea>
-    <button type="submit" class="btn primary">ส่งข้อความ</button>
-  </form>
+  <!-- FOOTER -->
+  <footer class="mobile-footer">
+    <p>© Suphanburi Para Sports Club</p>
+  </footer>
 
-  <p class="reveal" style="margin-top:20px;opacity:.8;">
-    * ทางชมรมจะติดต่อกลับโดยเร็วที่สุด
-  </p>
-</section>
-
-<footer>
-  <p>📍 โรงเรียนบ้านโพธิ์ตะวันออก</p>
-  <p>📞 080-0060015</p>
-  <p>📘 Facebook: ชมรมกีฬาคนพิการจังหวัดสุพรรณบุรี</p>
-</footer>
-
-<script src="js/main.js"></script>
 </body>
 </html>
